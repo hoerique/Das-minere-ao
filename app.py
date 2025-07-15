@@ -25,7 +25,7 @@ def carregar_dados():
     """Carrega e trata os dados do CSV"""
     try:
         # Carregar dados do link bruto do GitHub
-        url = 'https://github.com/hoerique/Das-minere-ao/blob/main/Dados.csv'
+        url = 'https://raw.githubusercontent.com/hoerique/-Dashboard-de-An-lise-de-Dados-de-Minera-o/main/minera%C3%A7%C3%A3o.csv'
         df = pd.read_csv(url)
         if df.empty:
             st.error("O arquivo CSV foi carregado, mas está vazio. Verifique o conteúdo do arquivo no GitHub.")
